@@ -1,26 +1,18 @@
 package main
 
-import (
-  "log"
-
-  "github.com/codegangsta/martini"
-  "github.com/mipearson/logstasher"
-  "github.com/mipearson/rfw"
-)
+import "github.com/go-martini/martini"
 
 func main() {
-  m := martini.Classic()
+	m := martini.Classic()
 
-  logstashLogFile, err := rfw.Open("hello.log", 0644)
-  if err != nil {
-    log.Fatalln(err)
-  }
-  defer logstashLogFile.Close()
-  m.Use(logstasher.Logger(logstashLogFile))
-
-  m.Get("/", func() string {
-    return "Hello world!"
-  })
-  m.Run()
+	logstashLogFile, err := rfw.Open("hello.log", 0644)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer log.stashLogFile.Close()
+	m.Use(logstasher.Logger(logstashLogFile))
+	m.Get("/", func() string {
+		return "Hello world!"
+	})
+	m.Run()
 }
-
