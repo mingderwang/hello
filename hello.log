@@ -6,4 +6,3 @@
 {"@timestamp":"2015-01-29T20:25:00+08:00","@version":1,"method":"GET","path":"/","status":200,"size":12,"duration":0.06095300000000001}
 {"@timestamp":"2015-01-29T20:25:01+08:00","@version":1,"method":"GET","path":"/","status":200,"size":12,"duration":0.030522000000000004}
 {"@timestamp":"2015-01-29T20:25:03+08:00","@version":1,"method":"GET","path":"/","status":200,"size":12,"duration":0.08957600000000002}
-{"@timestamp":"2015-01-29T20:25:04+08:00","@version":1,"method":"GET","path":"/","status":200,"size":12,"duration":0.031404}
